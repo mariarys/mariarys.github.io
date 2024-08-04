@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div id="inicio">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/foto3.jpg" alt="Foto de Mariarys Delgado" class="brand-img" /> Mariarys Delgado
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca">Acerca de mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/mariarys-delgado/">
+                        <img src="assets/img/logo_linked.png" alt="LinkedIn" class="nav-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="cvContent" class="text-center">
+            <div class="photos d-flex justify-content-center">
+                <img src="assets/img/foto1.jpg" alt="Foto 1" class="photo mx-2">
+                <img src="assets/img/foto2.jpg" alt="Foto 2" class="photo mx-2">
+            </div>
+            <div class="cv-details mt-4">
+                <h1>Ingeniera Mariarys Delgado</h1>
+                <p>Ingeniera de Sistemas</p>
+            </div>
+            <div class="p-3">
+                <a href="assets/cv_MariarysDelgado.pdf" class="btn btn-dark" download>Descargar CV</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!---opcion Acerca de mi -->
+    <section class="container-flex" id="acerca">
+        <div>
+            <h2>Acerca de mi</h2>
+            <p>Soy Mariarys Delgado, una ingeniera de sistemas con una gran pasión por la tecnología y el análisis de datos. Mi formación incluye una especialización en análisis de datos y actualmente estoy aprendiendo desarrollo web Full Stack con Python. Aunque mi experiencia es limitada, mi entusiasmo por aprender y mejorar me impulsa a enfrentar cada proyecto con dedicación y creatividad. Estoy emocionada por explorar nuevas oportunidades y crecer en este emocionante campo. ¡Gracias por visitar mi portafolio!</p>
+        </div>
+    </section>
+
+    <!---opcion Habilidades -->
+    <section class="container habilidades-p" id="habilidades">
+        <div >
+            <h2 class="text-center">Habilidades</h2>
+            <!-- Sección de habilidades técnicas -->
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Técnicas</h3>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Python</a>
+                        <a href="#" class="list-group-item list-group-item-action">HTML & CSS</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tableau</a>
+                        <a href="#" class="list-group-item list-group-item-action">Power BI</a>
+                        <a href="#" class="list-group-item list-group-item-action">SQL</a>
+                        <a href="#" class="list-group-item list-group-item-action">Excel</a>
+                        <a href="#" class="list-group-item list-group-item-action">JavaScript</a>
+                    </div>
+                </div>
+
+                <!-- Sección de habilidades blandas -->
+                <div class="col-md-6">
+                    <h3>Blandas</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle"></i> Resolución de problemas</li>
+                        <li><i class="bi bi-check-circle"></i> Colaboración</li>
+                        <li><i class="bi bi-check-circle"></i> Gestión del tiempo</li>
+                        <li><i class="bi bi-check-circle"></i> Habilidad para tomar decisiones</li>
+                        <li><i class="bi bi-check-circle"></i> Pensamiento crítico</li>
+                        <li><i class="bi bi-check-circle"></i> Adaptabilidad</li>
+                        <li><i class="bi bi-check-circle"></i> Curiosidad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---opcion Proyectos -->
+    <section class="container-flex " id="proyectos">
+        <div >
+            <h2>Proyectos</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Lista de tareas pendientes</h3>
+                    <p>Página para la creación de un listado de planificación para tareas pendientes y realizadas.</p>
+                    <div id="proyecto1">
+                    <img  src="assets/img/proyecto_1.jpg" onclick="agrandarimagen()">
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Aerolineas SKYP</h3>
+                    <p>Creación de página web para la empresa aerolineas SKYP</p>
+                    <div id="proyecto2">
+                    <img src="assets/img/prpyecto-2.jpg"  onclick="agrandarimagen()" >
+                    </div>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!---opcion contacto-->
+    <section class="container-flex">
+        <div id="contacto">
+            <h2>Contacto</h2>
+            <form action="#contacto form" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Asunto</label>
+                    <textarea class="form-control" id="subject" name="subject" rows="3"
+                        placeholder="Escribe el asunto aquí..." required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Número de Teléfono (opcional)</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ejemplo: +56912345678">
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
